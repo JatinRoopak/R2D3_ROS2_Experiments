@@ -95,6 +95,7 @@ def generate_launch_description():
         executable="move_group",
         output="screen",
         parameters=[
+            {'use_sim_time': True},
             robot_description,
             robot_description_semantic,
             kinematics_yaml,
@@ -115,6 +116,7 @@ def generate_launch_description():
         output="log",
         arguments=["-d", rviz_full_config],
         parameters=[
+            {'use_sim_time': True},
             robot_description,
             robot_description_semantic,
             ompl_planning_pipeline_config,
@@ -127,6 +129,7 @@ def generate_launch_description():
     )
     # Static TF
     static_tf = Node(
+        parameters=[{'use_sim_time': True}],
         package="tf2_ros",
         executable="static_transform_publisher",
         name="static_transform_publisher",
@@ -139,7 +142,7 @@ def generate_launch_description():
         executable="robot_state_publisher",
         name="robot_state_publisher",
         output="both",
-        parameters=[robot_description],
+        parameters=[robot_description, {'use_sim_time': True}],
     )
     # ros2_control using FakeSystem as hardware
     ros2_controllers_path = os.path.join(

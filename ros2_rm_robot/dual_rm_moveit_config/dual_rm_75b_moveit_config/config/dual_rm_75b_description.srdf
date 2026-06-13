@@ -443,4 +443,14 @@
     <disable_collisions link1="r_link5" link2="r_link6" reason="Adjacent"/>
     <disable_collisions link1="r_link5" link2="r_link7" reason="Never"/>
     <disable_collisions link1="r_link6" link2="r_link7" reason="Adjacent"/>
+
+
+    <passive_joint name="joint_swivel_wheel_1_1"/>
+    <passive_joint name="joint_swivel_wheel_1_2"/>
+    <passive_joint name="joint_swivel_wheel_2_1"/>
+    <passive_joint name="joint_swivel_wheel_2_2"/>
+    <passive_joint name="joint_swivel_wheel_3_1"/>
+    <passive_joint name="joint_swivel_wheel_3_2"/>
+    <passive_joint name="joint_swivel_wheel_4_1"/>
+    <passive_joint name="joint_swivel_wheel_4_2"/>
 </robot>

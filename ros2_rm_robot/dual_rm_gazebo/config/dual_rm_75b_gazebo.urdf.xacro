@@ -326,8 +326,8 @@
         </joint>
 
 
-        <!-- <joint name="joint_swivel_wheel_1_1">
-            <command_interface name="position"/>
+        <joint name="joint_swivel_wheel_1_1">
+            <command_interface name="velocity"/>
             <state_interface name="position">
                 <param name="initial_value">0</param>
             </state_interface>
@@ -335,7 +335,7 @@
         </joint>
 
         <joint name="joint_swivel_wheel_1_2">
-            <command_interface name="position"/>
+            <command_interface name="velocity"/>
             <state_interface name="position">
                 <param name="initial_value">0</param>
             </state_interface>
@@ -343,7 +343,7 @@
         </joint>
 
         <joint name="joint_swivel_wheel_2_1">
-            <command_interface name="position"/>
+            <command_interface name="velocity"/>
             <state_interface name="position">
                 <param name="initial_value">0</param>
             </state_interface>
@@ -351,7 +351,7 @@
         </joint>
 
         <joint name="joint_swivel_wheel_2_2">
-            <command_interface name="position"/>
+            <command_interface name="velocity"/>
             <state_interface name="position">
                 <param name="initial_value">0</param>
             </state_interface>
@@ -360,7 +360,7 @@
 
 
         <joint name="joint_swivel_wheel_3_1">
-            <command_interface name="position"/>
+            <command_interface name="velocity"/>
             <state_interface name="position">
                 <param name="initial_value">0</param>
             </state_interface>
@@ -369,7 +369,7 @@
 
 
         <joint name="joint_swivel_wheel_3_2">
-            <command_interface name="position"/>
+            <command_interface name="velocity"/>
             <state_interface name="position">
                 <param name="initial_value">0</param>
             </state_interface>
@@ -377,7 +377,7 @@
         </joint>
 
         <joint name="joint_swivel_wheel_4_1">
-            <command_interface name="position"/>
+            <command_interface name="velocity"/>
             <state_interface name="position">
                 <param name="initial_value">0</param>
             </state_interface>
@@ -385,12 +385,12 @@
         </joint>
 
         <joint name="joint_swivel_wheel_4_2">
-            <command_interface name="position"/>
+            <command_interface name="velocity"/>
             <state_interface name="position">
                 <param name="initial_value">0</param>
             </state_interface>
             <state_interface name="velocity"/>
-        </joint>  -->
+        </joint> 
 
     </ros2_control>
 
