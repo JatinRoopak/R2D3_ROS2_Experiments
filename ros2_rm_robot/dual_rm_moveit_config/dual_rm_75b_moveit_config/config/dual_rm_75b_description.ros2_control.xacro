@@ -50,13 +50,13 @@
                 </state_interface>
                 <state_interface name="velocity"/>
             </joint>
-            <joint name="l_joint7">
+            <!-- <joint name="l_joint7">
                 <command_interface name="position"/>
                 <state_interface name="position">
                   <param name="initial_value">${initial_positions['l_joint7']}</param>
                 </state_interface>
                 <state_interface name="velocity"/>
-            </joint>
+            </joint> -->
             <joint name="r_joint1">
                 <command_interface name="position"/>
                 <state_interface name="position">
@@ -99,13 +99,13 @@
                 </state_interface>
                 <state_interface name="velocity"/>
             </joint>
-            <joint name="r_joint7">
+            <!-- <joint name="r_joint7">
                 <command_interface name="position"/>
                 <state_interface name="position">
                   <param name="initial_value">${initial_positions['r_joint7']}</param>
                 </state_interface>
                 <state_interface name="velocity"/>
-            </joint>
+            </joint> -->
             <joint name="platform_joint">
                 <command_interface name="position"/>
                 <state_interface name="position">

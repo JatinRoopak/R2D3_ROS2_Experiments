@@ -2,6 +2,7 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="dual_rm_75b_gazebo">
 
     <xacro:include filename="$(find dual_rm_75b_description)/urdf/dual_rm_75b_description.urdf.xacro" />
+    <!-- <xacro:include filename="$(find dual_rm_gazebo)/config/dg4f_gazebo_classic.urdf.xacro"/> -->
 
     <gazebo reference="base_link">
         <self_collide>false</self_collide>
@@ -32,10 +33,10 @@
         <self_collide>false</self_collide>
         <gravity>true</gravity>
     </gazebo>
-    <gazebo reference="r_link7">
+    <!-- <gazebo reference="r_link7">
         <self_collide>false</self_collide>
         <gravity>true</gravity>
-    </gazebo>
+    </gazebo> -->
     <gazebo reference="l_link1">
         <self_collide>false</self_collide>
         <gravity>true</gravity>
@@ -60,10 +61,10 @@
         <self_collide>false</self_collide>
         <gravity>true</gravity>
     </gazebo>
-    <gazebo reference="l_link7">
+    <!-- <gazebo reference="l_link7">
         <self_collide>false</self_collide>
         <gravity>true</gravity>
-    </gazebo>
+    </gazebo> -->
 
     <gazebo reference="head_link1">
         <self_collide>false</self_collide>
@@ -175,7 +176,12 @@
         <self_collide>false</self_collide>
         <gravity>true</gravity>
     </gazebo>
-   
+
+    <!-- <xacro:dg4f_attach
+        parent="l_hand_link"
+        xyz="0 0 0.01"
+        rpy="0 0 0"/>
+     -->
     <gazebo>
         <is_static>false</is_static>
         <self_collide>true</self_collide>

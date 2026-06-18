@@ -27,7 +27,7 @@ left_arm_controller:
       - l_joint4
       - l_joint5
       - l_joint6
-      - l_joint7
+      # - l_joint7
     command_interfaces:
       - position
     state_interfaces:
@@ -42,7 +42,7 @@ right_arm_controller:
       - r_joint4
       - r_joint5
       - r_joint6
-      - r_joint7
+      # - r_joint7
     command_interfaces:
       - position
     state_interfaces:
