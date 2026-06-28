@@ -4,6 +4,7 @@
   <xacro:include filename="$(find dual_rm_75b_description)/urdf/woosh_agv.urdf.xacro"/>
   <xacro:include filename="$(find dual_rm_75b_description)/urdf/body_head_platform.urdf.xacro"/>
   <!-- <xacro:include filename="$(find dual_rm_75b_description)/urdf/left_hand.urdf.xacro"/> -->
+  <xacro:include filename="$(find dual_rm_75b_description)/urdf/left_robotiq_2f_140_macro.urdf.xacro" />
   <!-- <xacro:include filename="$(find dual_rm_75b_description)/urdf/right_hand.urdf.xacro"/> -->
   <xacro:include filename="$(find dual_rm_75b_description)/urdf/rm75_b_v_left.urdf.xacro"/>
   <xacro:include filename="$(find dual_rm_75b_description)/urdf/rm75_b_v_right.urdf.xacro"/>
